@@ -1,0 +1,27 @@
+var
+x
+y
+count
+
+instr
+load 1 
+ saveto count 
+  
+ @@start: 
+ FD x 
+ RT 170 
+ inc x 
+ load x 
+ mul count 
+ setcolor 
+ cmp x,2100 
+ JL @start 
+  
+ load count 
+ mul 1.1 
+ saveto count 
+ load 0 
+ saveto x 
+ cmp count,9999991 
+ JL @start
+

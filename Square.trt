@@ -1,0 +1,13 @@
+var
+
+
+
+instr
+FD 100
+RT 90
+FD 100
+RT 90
+FD 100
+RT 90
+FD 100
+

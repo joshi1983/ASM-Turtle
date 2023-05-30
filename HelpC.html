@@ -1,0 +1,52 @@
+<html>
+<head><title>ASM Turtle Commands</title></head>
+<body>
+
+<strong><h1>ASM Turtle Commands</h1></strong>
+<dd>For the following explanations, the letter "h" will represent a hidden variable used to store a temperary number value.  The letters "x" and "y" will represent command parameters.  These don't have to be actual variables.  
+<br>
+<hr>
+
+<b>ABS</b> - sets h to the absolute value of h, in other words, makes the sign of h positive<br>
+<dd>- for example:  
+<dd><dd>- the absolute value of 3.5464 is 3.5464 
+<dd><dd>- the absolute value of -3.5464 is 3.5464<br>
+<b>ADD</b> x - adds a value x to h<br>
+<b>CALL</b> x - pushes the current command address(so the next instruction can be executed after the procedure is completed) and jumps to a procedure<br>
+<b>CMP</b> x,y - compares the values of the 2 parameters
+<dd>- used for conditional jumps like: JL, JNL, JE
+<dd>- if x is less than y, the JL command will jump to its label<br>
+<b>COS</b> - h becomes cos(h), angle is in radians<br>
+<b>DEC</b> x - decrements a variable x by 1, in other words subtracts 1 from a variable<br>
+<b>DIV</b> x - divides the value of h by x, in other words, h becomes h/x<br>
+<b>FD</b> x - moves the pen x distance forward
+<dd>- this draws a line only if the pen is down<br>
+<b>INC</b> x - increments a variable x by 1, in other words adds 1 to a variable<br>
+<b>JE</b> x - jumps to the address "x" if the comparison is "equal"<br>
+<b>JL</b> x - jumps to the address "x" if the comparison is "less than"<br>
+<b>JMP</b> x - always jumps to the address "x"<br>
+<b>JNL</b> x - jumps to the address "x" if the comparison is "Not less than", in other words, equal or greater than<br>
+<b>LOAD</b> x - sets h to the value of x<br>
+<b>LT</b> x - turns the direction of the pen, left x degrees<br>
+<b>MUL</b> x - multiplies the value of h by x, in other words, h becomes h*x<br>
+<b>PENUP</b> - lifts the pen so no graphics are drawn until the pen is dropped<br>
+<b>PENDOWN</b> -drops the pen so the FD cammand draws graphics<br>
+<b>RET</b> - jumps back to where a procedure was called
+<dd>- this command should be at the end of every procedure<br>
+<b>RT</b> x - turns the direction of the pen, right x degrees<br>
+<b>SAVETO</b> x - sets x to the value of h<br>
+<b>SETCOLOR</b> - sets the pen colour to the value of h<br>
+<b>SIN</b> - h becomes sin(h), angle is in radians<br>
+<b>SQR</b> - squares the value of h, in other words,  h becomes h*h<br>
+<b>SQRT</b> - square roots the value of h, if h is positive<br>
+<b>SUB</b> x - subtracts a value x from h
+
+<hr>
+<strong>Other Pages</strong>
+<dd><A HREF="HelpLPS.html">Loops</A>
+<dd><A HREF="HelpV.html">Variables</A>
+<dd><A HREF="Help.html">General Help</A>
+<dd><A HREF="HelpGlossary.html">Glossary</A>
+
+</body>
+</html>

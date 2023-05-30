@@ -1,0 +1,47 @@
+var
+
+
+
+instr
+rt 90
+call @Main
+rt 90
+call @Main
+rt 90
+call @Main
+rt 90
+call @Main
+jmp @endall // when the above calls are complete, jump to the end of the program.
+
+proc @@Main:
+fd 100
+lt 90
+call @Cross
+rt 90
+call @Cross
+rt 90
+call @Cross
+rt 90
+fd 100
+rt 180
+ret
+
+proc @@Cross:
+load 255
+SetColor
+fd 30
+rt 90
+fd 10
+rt 180
+fd 20
+rt 180
+fd 10
+rt 90
+fd 30
+rt 180
+Load 0
+SetColor
+ret
+
+@@endall:
+

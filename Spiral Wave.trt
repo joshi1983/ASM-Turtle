@@ -1,0 +1,18 @@
+var
+x
+y
+
+
+instr
+@@start:
+FD 5
+RT y
+inc x
+load x
+div 100
+sin
+mul 80
+saveto y
+cmp x,1000
+jl @start
+

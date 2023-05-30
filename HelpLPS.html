@@ -1,0 +1,56 @@
+<html>
+<head><title>Loops in ASM Turtle</title></head>
+<body>
+<h1>Loops in ASM Turtle</h1>
+<dd>Loops are used to repeat commands many, many times.  They are usually repeated while a certain condition is met.  This condition might be while one variable is larger or smaller than another. 
+Loops are composed of these 4 things: labels, commands, comparisons, jumps.
+<hr>
+<strong>Labels</strong>
+<dd>Labels store the address of a command in the turtle program.  This is done to give jump commands an address to jump to.<br>
+Examples:<br>
+<dd>@@start:
+<dd>@@end:
+<dd>@@This_is_a_Label:
+<dd>@@StartCircle:
+<br>
+<br>
+<strong>Commands</strong>
+<dd>These are the commands you want repeated.  If you want a loop for a certain number of times, you could set a variable's value before the loop and increment it somewhere in the command list.  This variable would be used in the comparison so the loop ends at the appropiate time.<br>
+Examples:
+<dd>......
+<dd>FD 1
+<dd>RT 1
+<dd>inc x
+<dd>......
+<br>
+<br>
+<strong>Comparisons</strong>
+<dd>A comparison is usually done to determine weather the loop will continue.  The only comparing command in ASM Turtle is the CMP command.  This will store the comparison to determine wether a conditional jump is executed or not.<br>
+Examples:<br>
+<dd>CMP x,360
+<dd>CMP x,y
+<br>
+<br>
+<strong>Jumps</strong>
+<dd>A jump is used to change the next command to be executed.  Usually the next command would just be the next one below it.  An unconditional jump always makes the next command, the one after the label in its parameters.  A conditional jump will only jump under a certain condition.  This condition is usually based on the result of a comparison.<br>
+Examples:
+<dd>JL @StartCircle<br>
+<br>
+<hr>
+<h3>Example loops:</h3>
+<b>Circle</b>
+<hr>
+<text color = "00FF00">
+@@StartCircle:<br> 
+// label<br>
+FD 1<br>
+RT 1<br>
+inc x
+// commands<br>
+CMP x,360 <br>     
+// comparison<br>
+JL @StartCircle<br>
+// jump<br>
+
+</body>
+</html>

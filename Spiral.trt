@@ -1,0 +1,18 @@
+var
+x
+y
+
+
+instr
+@@start:
+
+fd y
+rt 1
+
+add 0.01 // increase radius every pass
+saveto y
+inc x
+cmp x,3600 // maximum number of passes in the loop
+jl @start
+
+

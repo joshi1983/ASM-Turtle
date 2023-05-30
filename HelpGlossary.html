@@ -1,0 +1,59 @@
+<html>
+<head><title>ASM Turtle Glossary</title></head>
+<body>
+
+<strong><h1>ASM Turtle Glossary</h1></strong>
+<br>
+<hr>
+
+<strong><A NAME="HLL">High Level Language</A> (HLL)</strong>
+<dd>A programming language using very natural or mathematical features like operators(*,+,-,/,*,<,>,=), words(try, end, goto...).  Each line of an HLL, when translated to a low level language, is usually composed of several instructions.  A line of HLL code might have several steps within it and would have to be ordered with things like order of operation, if it were translated into a low level language.<br>
+Examples:
+<dd>c, c++, Pascal, Java, Basic<br>
+Example loop in C++:<br>
+
+<dd><b>for</b> (int x=0; x<100; x++);
+<dd>{ <i>// start with x=0, looping while x<100, and adding 1 to x each pass of the loop<br>
+</i>
+<dd><dd>ShowMessage('This loop is on pass #' + inttostr(x));<br>
+	<dd><i>// show a message telling the user what pass, the loop is on	
+</i>
+<dd>} <i>// end of the looping code<br>
+</i>
+<br>
+<strong>Low Level Language (LLL)</strong>
+<dd>A programming language using quite small instructions.  The 2 main low level languages are assembly and machine code.  Assembly code can't be executed by the computer, however, it can be assembled into machine code and that can be executed.<br>
+Examples:
+<dd>assembly, machine code(executable code)<br>
+<br>
+<strong>Machine Code (LLL)</strong>
+<dd>A way of storing programs so they can be executed by the computer.  This is not usually used to program with because that mainly involves tedious work and memorizing how the code is stored.  This work is better done by the computer by using an assembler and programming with code symbolizing each machine code instruction.<br>
+Examples found in:
+<dd>*.exe files, *.dll files, *.com files<br>
+<br>
+
+<strong>Offset (shift)</strong>
+<dd>An offset is used in calculating a memory address.  This involves using a variable(maybe an index) and adding or subtracting a constant value(ie. 3).  Offsets are used internally for variables that were declared in the code section.<br>
+<br>
+
+<strong>Pop</strong>
+<dd>Popping is used to remove information from the stack and therefor decrements the index.<br>
+<br>
+
+<strong>Push</strong>
+<dd>Pushing is used to add information to the stack and therefor increments the index.  Variable declarations in code, are actually compiled into a push command.  During compiling, that location in the stack where that variable was pushed is kept track of so wherever you use that name in a command, it refers to the same variable.<br>
+
+<br>
+
+<strong><A NAME="STK">Stack</A></strong>
+<dd>A stack is a way of storing data.  It is manipulated with an index(storing the height or amount of the stack being used), a push procedure, and a pop function.   Other parts of the stack can be used by using an offset from the current index.<br>
+<br>
+
+<strong>Symbolic Language</strong>
+<dd>A language using symbols to represent something else.  The assembly language uses words or abreviations(mov, add, sub, div, mul, inc, dec...) to represent the type of instruction it is(the opcode).<br>
+Examples:
+<dd>assembly<br>
+<br>
+
+</body>
+</html>

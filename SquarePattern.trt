@@ -1,0 +1,22 @@
+var
+x
+
+
+instr
+@@StartSquare:
+
+FD x
+RT 90
+FD x
+RT 90
+FD x
+RT 90
+FD x
+RT 90
+
+inc x
+inc x // increase the size of the square
+
+cmp x,100
+jl @StartSquare
+

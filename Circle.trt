@@ -1,0 +1,15 @@
+var
+x
+
+
+
+instr
+@@start:
+
+fd 1
+rt 1
+inc x
+cmp x,360
+jl @start
+
+

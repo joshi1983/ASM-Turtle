@@ -1,0 +1,34 @@
+Title: ASMTurtle
+
+Description: 
+     This program was created to show a fairly simple way of scripting in Delphi.  The scripting language is similar to assembly with jumps and labels and no operators. 
+     The source files should work on Delphi 4 and up.
+
+Rules for using this program and source files:
+	Do not remove or modify any statement of credit(ie. the author's name).
+	The only code you are permitted to copy and paste in your own programs, is the following procedures and functions:
+CleanString, ClearDoubleSpaces, ClearFirstSpaces, ClearLastSpaces, Delay1, RemoveChar, and ValFloat.  When these are moved from one program to another, give credit to the author.  Other than that, you are free to do whatever you want with those procedures.
+	You are not permitted to sell this program or any variation created using my code.  This source code is for educational purposes not commercial and its free so noone should pay for it.  You are, however, allowed to give away a new variation of this program.  Its not necessary but I'd like to see any new versions you create so please email them to me.
+	
+
+Changes:
+
+August 14, 2002:
+	- added an options form that has the following:
+		- a way to edit the maximum execution time of the turtle program
+		- a way of delaying the execution of each instruction which allows people to see the execution process more easily
+		- a way of changing the background colour for a more impressive appearance
+	- created and added a 16x16 icon
+	- added more documentation to improve other programmers' understanding of the code
+
+September 7, 2002:
+	- added a checkbox in the options form to disable the timed stop feature
+	- added the application.processmessages into the delay and in the run procedure.
+	- updated the version to 2.
+	- added an output form to display the turtle program's output instead of showing it on the same form as the code
+	- added a stop button to the output form to stop the program whenever the user wants
+	- made it so the debug form only updates its display once every 50ms instead of on a random interval or for each executed command
+	- set the alignment of the debug for to left and the output form to right to make it look more organized
+
+Plans for the future
+	- getting pushing and popping of the variable stack working so local variables can be declared and used within the code.
